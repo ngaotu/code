@@ -4,11 +4,12 @@
 using namespace std;
 
 class Student{
-  public:
+ private:
   string name;
   int age;
   string address;
   string id;
+  public:
   Student(string name,int age,string address, string id){
       this->name=name;
       this->age=age;
