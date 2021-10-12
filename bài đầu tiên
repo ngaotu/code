@@ -1,0 +1,31 @@
+
+#include <iostream>
+
+using namespace std;
+
+class Student{
+  public:
+  string name;
+  int age;
+  string address;
+  string id;
+  Student(string name,int age,string address, string id){
+      this->name=name;
+      this->age=age;
+      this->address=address;
+      this->id=id;
+  }
+  void display(){
+      cout<<"Name: "<<name<<endl;
+       cout<<"Age: "<<age<<endl;
+      cout<<"Address: "<<address<<endl;
+      cout<<"Id: "<<id<<endl;
+     
+  }
+};
+int main()
+{
+    Student s("Tung",18,"TDP Thuong","21110111");
+s.display();
+    return 0;
+}
