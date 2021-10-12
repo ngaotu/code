@@ -1,0 +1,46 @@
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+class Person(){
+  private:
+  int id;
+  string ho;
+  string dem;
+  string name;
+  int age;
+  string gender;
+  string address;
+  string phonenumber;
+  public:
+  Person();
+  Person(int,string,int,string,string,string,string,string)
+  
+};
+Person::Person(){
+    this->age=0;
+    this->name="";
+    this->id=100;
+    this->ho="";
+    this->dem="";
+    this->address="";
+    this->gender="";
+    this->phonenumber="";
+}
+Person::Person(int age,string name,int id,string ho,string dem ,string address
+,string gender,string phonenumber){
+    setage(age);
+    setname(name);
+    setid(id);
+    setho(ho);
+    setdem(dem);
+    setaddress(address);
+    setgender(gender);
+    setphonenumber(phonenumber);
+    
+}
+int main()
+{
+   
+    return 0;
+}
