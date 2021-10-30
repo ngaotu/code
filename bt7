@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+void volume(double r ,double l){
+double v;
+v=pow(r,2)*M_PI*l;
+cout<<v;
+}
+void area(int a,int b,int c,double& s){
+    double p=(a+b+c)*0.5;
+    s=sqrt(abs(p*(p-a)*(p-b)*(p-c)));
+    cout<<"S tam giac :"<<s;
+
+}
+int main (){
+double r,l;
+cin>>r>>l;
+cout<<"The tich hinh tru la: ";
+volume(r,l);
+int a,b,c;
+double s;
+cout<<"\nNHap: ";
+cin>>a>>b>>c;
+area(a,b,c,s);
+    return 0;
+}
