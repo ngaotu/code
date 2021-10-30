@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main (){
+     string str1;
+cout<<"Nhap xau: \n";
+getline(cin,str1);          
+cout<<str1<<endl;
+int account=1;
+for(int i=0;i<str1.length()-1;i++)  {          
+    if((str1.at(i)==' ')&& (str1.at(i+1)!=' ')){
+        account++;
+    }
+    }
+cout<<"So tu trong xau la: "<<account<<endl;
+    return 0;
+}
