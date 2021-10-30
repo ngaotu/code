@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+void check(int n,float a , float b){
+
+cout<<n<<" "<<a<<" "<<b<<endl;
+}
+int findAbs(int n){
+    return abs(n);
+}
+int powfun(int& a,int& b){
+    cout<<"Nhap a ,b: \n";
+    cin>>a>>b;
+    return pow(a,b); // tra ve a^b
+}
+int main (){
+int n ;
+float x,y;
+cout<<"Nhap:\n";
+cin>>n>>x>>y;
+int a,b;
+check(n,x,y);
+cout<<findAbs(n);
+cout<<powfun(a,b);
+    return 0;
+}
